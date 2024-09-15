@@ -2,5 +2,5 @@
 #include <math.h>
 
 unsigned mango(unsigned quantity, unsigned price) {
-  return ceil(quantity / 3.0) * 2 * price;
+  return (quantity - quantity / 3) * price;
 }
